@@ -21,7 +21,7 @@ class NetworkConstants {
     
     public var serverAddress: String {
         get {
-            return "https://hammerhead-app-xnriz.ondigitalocean.app/api/" //player/scores
+            return "https://fpl.brachios-x.com/api/" //player/scores
         }
     }
 }

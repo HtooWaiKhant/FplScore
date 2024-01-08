@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3E148A32B4BFE49001F172D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E148A22B4BFE49001F172D /* UIViewExtensions.swift */; };
+		D3E148A52B4BFF37001F172D /* PlayerTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E148A42B4BFF37001F172D /* PlayerTableCellViewModel.swift */; };
+		D3E148A82B4C062E001F172D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D3E148A72B4C062E001F172D /* SDWebImage */; };
+		D3E508662B3BD77600B7D0DD /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E508652B3BD77600B7D0DD /* PlayerModel.swift */; };
+		D3E5086A2B3BDA8500B7D0DD /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E508692B3BDA8500B7D0DD /* APICaller.swift */; };
+		D3E5086C2B3BF61D00B7D0DD /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5086B2B3BF61D00B7D0DD /* Observable.swift */; };
 		FAA112822B35E9CC002E6881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA112812B35E9CC002E6881 /* AppDelegate.swift */; };
 		FAA1128B2B35E9CD002E6881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA1128A2B35E9CD002E6881 /* Assets.xcassets */; };
 		FAA1128E2B35E9CD002E6881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA1128C2B35E9CD002E6881 /* LaunchScreen.storyboard */; };
@@ -40,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3E148A22B4BFE49001F172D /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		D3E148A42B4BFF37001F172D /* PlayerTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableCellViewModel.swift; sourceTree = "<group>"; };
+		D3E508652B3BD77600B7D0DD /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		D3E508692B3BDA8500B7D0DD /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		D3E5086B2B3BF61D00B7D0DD /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		FAA1127E2B35E9CC002E6881 /* Fpl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fpl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA112812B35E9CC002E6881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA1128A2B35E9CD002E6881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E148A82B4C062E001F172D /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +96,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3E508642B3BD76300B7D0DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3E508652B3BD77600B7D0DD /* PlayerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3E508672B3BD80B00B7D0DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3E148A22B4BFE49001F172D /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D3E508682B3BD81B00B7D0DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5086B2B3BF61D00B7D0DD /* Observable.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		FAA112752B35E9CC002E6881 = {
 			isa = PBXGroup;
 			children = (
@@ -107,14 +143,14 @@
 		FAA112802B35E9CC002E6881 /* Fpl */ = {
 			isa = PBXGroup;
 			children = (
+				D3E508682B3BD81B00B7D0DD /* Classes */,
+				D3E508672B3BD80B00B7D0DD /* Extensions */,
+				D3E508642B3BD76300B7D0DD /* Model */,
 				FAA112BD2B35EEA6002E6881 /* Networking */,
-				FAA112BC2B35EE85002E6881 /* Extensions */,
 				FAA112BB2B35EE55002E6881 /* Resources */,
-				FAA112BA2B35EE3C002E6881 /* Model */,
 				FAA112B92B35EE2D002E6881 /* Controllers */,
 				FAA112B82B35EE1F002E6881 /* ViewModel */,
 				FAA112B72B35EE1B002E6881 /* View */,
-				FAA112B62B35EE15002E6881 /* Classes */,
 				FAA112812B35E9CC002E6881 /* AppDelegate.swift */,
 				FAA1128F2B35E9CD002E6881 /* Info.plist */,
 			);
@@ -148,13 +184,6 @@
 			path = MainViewController;
 			sourceTree = "<group>";
 		};
-		FAA112B62B35EE15002E6881 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		FAA112B72B35EE1B002E6881 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA112C42B35FCD7002E6881 /* MainViewModel.swift */,
+				D3E148A42B4BFF37001F172D /* PlayerTableCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,13 +210,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		FAA112BA2B35EE3C002E6881 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		FAA112BB2B35EE55002E6881 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,17 +218,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		FAA112BC2B35EE85002E6881 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		FAA112BD2B35EEA6002E6881 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				FAA112BE2B35F773002E6881 /* NetworkConstants.swift */,
+				D3E508692B3BDA8500B7D0DD /* APICaller.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -235,6 +252,9 @@
 			dependencies = (
 			);
 			name = Fpl;
+			packageProductDependencies = (
+				D3E148A72B4C062E001F172D /* SDWebImage */,
+			);
 			productName = Fpl;
 			productReference = FAA1127E2B35E9CC002E6881 /* Fpl.app */;
 			productType = "com.apple.product-type.application";
@@ -307,6 +327,9 @@
 				Base,
 			);
 			mainGroup = FAA112752B35E9CC002E6881;
+			packageReferences = (
+				D3E148A62B4C062D001F172D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = FAA1127F2B35E9CC002E6881 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,11 +375,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA112C52B35FCD7002E6881 /* MainViewModel.swift in Sources */,
+				D3E148A52B4BFF37001F172D /* PlayerTableCellViewModel.swift in Sources */,
 				FAA112BF2B35F773002E6881 /* NetworkConstants.swift in Sources */,
 				FAA112822B35E9CC002E6881 /* AppDelegate.swift in Sources */,
 				FAA112B42B35EBCA002E6881 /* MainViewController.swift in Sources */,
+				D3E5086C2B3BF61D00B7D0DD /* Observable.swift in Sources */,
 				FAA112C12B35FB37002E6881 /* MainViewController+TableView.swift in Sources */,
+				D3E148A32B4BFE49001F172D /* UIViewExtensions.swift in Sources */,
 				FAA112C92B360E58002E6881 /* MainPlayerCell.swift in Sources */,
+				D3E508662B3BD77600B7D0DD /* PlayerModel.swift in Sources */,
+				D3E5086A2B3BDA8500B7D0DD /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +723,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3E148A62B4C062D001F172D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3E148A72B4C062E001F172D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3E148A62B4C062D001F172D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAA112762B35E9CC002E6881 /* Project object */;
 }
